@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for the header of the page */
+.header{
+    display: flex;
+    justify-content: center;
+    background: beige;
+    position: relative;
+    height: 70px;
+}
+
+.title{
+    color:red;
+    margin: 1%;
+}
+
+/* CSS for the images of the dice */
+.dice-images{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+
+#number-1{
+    margin:3%;
+    position: relative;
+}
+
+#number-2{
+    margin: 3%;
+    position: relative;
+}
+
+/* CSS for the buttons below */
+
+.Player-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Player-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+#roll-1{
+    margin:1%;
+    color: black;
+    background:plum;
+    font-size: large;
+    height: 60px;
+    width:120px;
+}
+
+#roll-2{
+    margin:1%;
+    background:plum;
+    font-size: large;
+    height: 60px;
+    width:120px;
+}
