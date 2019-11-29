@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body{
+    background:beige;
+}
 /* CSS for the header of the page */
 .header {
     display: flex;
@@ -51,4 +54,3 @@
     position: relative;
 }
 
-/* CSSS for the button */
