@@ -23,11 +23,17 @@ function player2() {
 
 function checkIfWon(total, random) {
     if(total <= 20 && random == 1) {
-        console.log("You lost")
-        number = 0;
+        player1Total = 0;
+        player2Total = 0;
     }
     else if(total >= 21) {
-        console.log("You won")
-        number = 0;
+        if (player1Total) {
+            document.getElementById("log").innerHTML = "Player 1 wins"
+        }
+        else if (player2Total) {
+            document.getElementById("log").innerHTML = "Player 2 wins"
+        }
+        player1Total = 0;
+        player2Total = 0;
     }
 }
