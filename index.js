@@ -1,5 +1,15 @@
 let player1Total  = 0;
 let player2Total  = 0;
+let toggle = true;
+
+function toggler() {
+    if (toggle) {
+        player1()
+    }
+    else if (!toggle){
+        player2()
+    }
+}
 
 function player1() {
     let player1Random = Math.floor(Math.random() * 6) + 1
@@ -25,6 +35,12 @@ function checkIfWon(total, random) {
     if(total <= 20 && random == 1) {
         player1Total = 0;
         player2Total = 0;
+        if (toggle) {
+            toggle = false;
+        }
+        else {
+            toggle = true;
+        }
     }
     else if(total >= 21) {
         if (player1Total) {

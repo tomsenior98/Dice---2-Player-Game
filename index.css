@@ -54,3 +54,14 @@ body{
     position: relative;
 }
 
+button {
+    text-align: center;
+    justify-content: center;
+}   
+
+#togg{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+}
